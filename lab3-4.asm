@@ -133,9 +133,9 @@ compare_to_circle:
         add al, [relativeToRectangle]
         add al, [relativeToCircle]
 
-        cmp al, 7
+        cmp al, 7 
         mov byte [zoneNumber], '4'
-        je exit ;al = 7
+        je exit ;al = 7            ;jamp если равно (0)
         
         cmp al, 3
         mov byte [zoneNumber], '5'
